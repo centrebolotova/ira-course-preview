@@ -124,7 +124,7 @@
 .zl .quality .vis{position:relative;height:100%;min-height:420px;margin:14px 14px 14px 0;border-radius:18px;overflow:hidden;background:radial-gradient(60% 60% at 50% 50%,rgba(var(--glow-1-rgb),.55),rgba(var(--glow-2-rgb),.25) 50%,rgba(255,255,255,.04) 80%)}
 .zl .quality .vis img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .zl .bubble{position:absolute;width:136px;height:136px;border-radius:50%;background:rgba(var(--accent-rgb),.9);backdrop-filter:blur(6px);box-shadow:0 14px 28px -14px rgba(var(--accent-dark-rgb),.7),inset 0 0 0 1px rgba(255,255,255,.2);display:grid;place-items:center;text-align:center;padding:18px;font-size:12px;line-height:1.25;color:rgba(255,255,255,.9);animation:zlfloat 7s ease-in-out infinite}
-.zl .bubble b{display:block;font-size:22px;line-height:1;color:#fff;margin-bottom:6px;font-weight:700}
+.zl .bubble b{display:block;font-size:18px;line-height:1;color:#fff;margin-bottom:6px;font-weight:700}
 .zl .bubble.b1{top:12%;left:10%}
 .zl .bubble.b2{top:40%;right:9%;animation-delay:-2.3s}
 .zl .bubble.b3{bottom:9%;left:24%;animation-delay:-4.6s}
@@ -323,12 +323,21 @@
 @media(max-width:900px){.zl .prereg-panel{gap:32px;padding:30px}.zl .week-content{padding-left:28px}}
 @media(max-width:620px){.zl .program-week summary{padding:22px 16px;gap:12px}.zl .week-number{font-size:28px;min-width:34px}.zl .week-heading strong{font-size:20px}.zl .week-intro{font-size:14px}.zl .week-content{grid-template-columns:1fr;gap:22px;padding:0 20px 22px}.zl .week-practice{padding:18px}.zl .prereg-panel{grid-template-columns:1fr;padding:26px 22px;gap:32px}.zl .prereg-panel .btn{width:100%;padding-inline:12px}.zl .prereg-dialog{padding:40px 22px 24px}.zl .prereg-dialog h2{font-size:26px}.zl .prereg-dialog .btn{font-size:13px;padding-inline:12px}.zl .chips span{border-radius:16px}.zl .expert-media{aspect-ratio:9/11}}
 
+
+.zl .fit-card{padding:28px;border-radius:20px;background:#fff;align-self:center}.zl .fit-card h3{font-size:25px;line-height:1.2;margin:16px 0}.zl .fit-card .btn{white-space:normal;text-align:center}
+.zl .messenger-options{display:grid;gap:12px;margin:24px 0 18px}
+.zl .messenger-option{font-family:var(--font);display:flex;align-items:center;gap:14px;width:100%;min-height:80px;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:#fff;color:var(--ink);text-align:left;font-size:19px;font-weight:600;text-decoration:none;transition:background .2s,transform .2s}
+.zl .messenger-option small{display:block;margin-top:3px;color:var(--muted);font-size:12px;font-weight:400}.zl .messenger-option>span:last-child:not(:nth-child(2)){margin-left:auto}
+.zl .messenger-icon{display:grid;place-items:center;flex:0 0 44px;height:44px;border-radius:14px;background:#e6f5fc;color:#2185b6;font-size:24px}.zl .max .messenger-icon{color:#5b3ce8;background:#efebff}
+.zl a.messenger-option:hover{background:var(--tint-soft);transform:translateY(-2px)}.zl .messenger-option:disabled{cursor:not-allowed;background:var(--bg-soft)}
+.zl .prereg-dialog .channel-status{padding:14px;border-radius:12px;background:var(--tint-soft);font-size:13px;line-height:1.55}
+@media(max-width:620px){.zl .fit-card{padding:22px}.zl .fit-card h3{font-size:23px}.zl .banner .btns .btn{font-size:14px;padding-inline:18px}}
 </style>
 </head>
 <body style="margin:0;background:#fff">
 <div class="zl">
 
-<div class="topbar">Первый поток · небольшая группа · живые встречи с экспертами</div>
+
 
 <header class="head" id="zlhead">
   <div class="wrap">
@@ -341,7 +350,7 @@
       <li><a href="#prereg">Предзапись</a></li>
 
     </ul></nav>
-    <a class="btn sm" href="#prereg" data-prereg>Хочу в первый поток</a>
+    <a class="btn sm" href="#prereg" data-prereg>Оставить предзапись</a>
   </div>
 </header>
 
@@ -350,13 +359,13 @@
   <div class="banner">
     <div class="hero-team" aria-label="Команда курса"><figure><img src="photos/olga.jpg" alt="Ольга Соколова" width="960" height="1280"><figcaption><b>Ольга Соколова</b><span>Врач-гастроэнтеролог</span></figcaption></figure><figure><img src="photos/anita.jpg" alt="Анита Даутова" width="1024" height="1280"><figcaption><b>Анита Даутова</b><span>Врач-эндокринолог</span></figcaption></figure><figure><img src="photos/alena.jpg" alt="Алёна Речкалова" width="853" height="1280"><figcaption><b>Алёна Речкалова</b><span>Консультант по ЗОЖ</span></figcaption></figure></div>
     <div class="banner-in">
-      <span class="bb-script">Первый поток · 4 недели вместе</span>
+      <span class="bb-script">Онлайн-курс о пищеварении</span>
       <h1>Свобода от проблем с животом за 4 недели по системе Болотова</h1>
-      <span class="motto serif">Небольшая группа. Живое общение.</span>
-      <p class="lead">Разберитесь в питании и привычках, которые влияют на самочувствие. В первом потоке — живые эфиры с врачами, практика с консультантом по ЗОЖ и ответы на ваши вопросы по ходу курса.</p>
+      <span class="motto serif">Понятные шаги на каждый день.</span>
+      <p class="lead">Как питаться без лишних запретов, замечать свои реакции на еду и выстроить удобный режим — разберём на курсе с врачами и консультантом по ЗОЖ.</p>
       <div class="btns">
-        <a class="btn light" href="#prereg" data-prereg>Хочу в первый поток</a>
-        <a class="btn line-w" href="#program">Программа курса</a>
+        <a class="btn light" href="#prereg" data-prereg>Оставить предзапись</a>
+        <a class="btn line-w" href="#prereg" data-prereg>Подойдёт ли мне курс?</a>
       </div>
     </div>
     <div class="glass g1"><b>40 лет</b><small>системе Болотова</small></div>
@@ -365,18 +374,18 @@
 </section>
 
 <!-- 2. Цифры — бегущей строкой -->
-<div class="strip" aria-label="Цифры">
+<div class="strip" aria-label="О курсе и Центре">
   <div class="strip-track">
     <ul>
       <li><span class="pic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg></span><span class="strip-copy"><b>40 лет</b> системе Болотова</span></li>
       <li><span class="pic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></span><span class="strip-copy"><b>1 000+ отзывов</b> о продукции Центра Болотова</span></li>
-      <li><span class="pic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v4l-5 9a3 3 0 0 0 2.6 4.5h8.8A3 3 0 0 0 19 16l-5-9V3"/></svg></span><span class="strip-copy"><b>4 недели</b> питания, практики и живых встреч</span></li>
+      <li><span class="pic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v4l-5 9a3 3 0 0 0 2.6 4.5h8.8A3 3 0 0 0 19 16l-5-9V3"/></svg></span><span class="strip-copy"><b>Меню и рецепты</b> для обычной жизни</span></li>
       <li><span class="pic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v6a4 4 0 0 0 8 0V3M10 13v2a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg></span><span class="strip-copy"><b>2 врача</b> и консультант по ЗОЖ ведут курс</span></li>
     </ul>
     <ul aria-hidden="true">
       <li><span class="pic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg></span><span class="strip-copy"><b>40 лет</b> системе Болотова</span></li>
       <li><span class="pic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></span><span class="strip-copy"><b>1 000+ отзывов</b> о продукции Центра Болотова</span></li>
-      <li><span class="pic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v4l-5 9a3 3 0 0 0 2.6 4.5h8.8A3 3 0 0 0 19 16l-5-9V3"/></svg></span><span class="strip-copy"><b>4 недели</b> питания, практики и живых встреч</span></li>
+      <li><span class="pic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v4l-5 9a3 3 0 0 0 2.6 4.5h8.8A3 3 0 0 0 19 16l-5-9V3"/></svg></span><span class="strip-copy"><b>Меню и рецепты</b> для обычной жизни</span></li>
       <li><span class="pic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v6a4 4 0 0 0 8 0V3M10 13v2a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg></span><span class="strip-copy"><b>2 врача</b> и консультант по ЗОЖ ведут курс</span></li>
     </ul>
   </div>
@@ -416,21 +425,21 @@
 <section class="wrap sec" id="first-flow" style="padding-top:20px">
   <div class="quality rv">
     <div class="txt">
-      <span class="eyebrow">Вместе с самого начала</span>
-      <h2>Первый поток —<br>больше живого общения</h2>
-      <p>Собираем небольшую группу, чтобы у команды было больше внимания к вопросам участников.</p>
+      <span class="eyebrow">Как проходит обучение</span>
+      <h2>Разбираем ваши вопросы<br>по ходу курса</h2>
+      <p>Для первого потока собираем небольшую группу. Будем встречаться на живых эфирах, чтобы обсудить то, что важно именно вам.</p>
       <ul>
-        <li>Встречаемся в прямом эфире: можно задать вопрос и уточнить то, что осталось непонятным.</li>
-        <li>Разбираем ваши ситуации и трудности, которые возникают на практике.</li>
-        <li>Проходим четыре недели вместе: от знакомства со своим самочувствием до плана после курса.</li>
+        <li>Уточняйте рекомендации, которые вызывают сомнения.</li>
+        <li>Обсуждайте трудности с питанием и режимом на примерах из своей жизни.</li>
+        <li>Выбирайте посильные изменения с опорой на объяснения специалистов.</li>
       </ul>
-      <p class="note">Ваши вопросы станут частью живых встреч.</p>
-      <div class="btns"><a class="btn light" href="#prereg" data-prereg>Хочу в первый поток</a></div>
+
+      <div class="btns"><a class="btn light" href="#prereg" data-prereg>Оставить предзапись</a></div>
     </div>
-    <div class="vis" aria-label="Формат первого потока">
-      <div class="bubble b1"><div><b>Вживую</b>встречи с экспертами</div></div>
-      <div class="bubble b2"><div><b>В диалоге</b>ваши вопросы и ситуации</div></div>
-      <div class="bubble b3"><div><b>Вместе</b>практика и поддержка</div></div>
+    <div class="vis" aria-label="От вопросов к практике">
+      <div class="bubble b1"><div><b>Спросить</b>о том, что непонятно</div></div>
+      <div class="bubble b2"><div><b>Понять</b>что можно изменить</div></div>
+      <div class="bubble b3"><div><b>Применить</b>в своём ритме</div></div>
     </div>
   </div>
 </section>
@@ -460,7 +469,7 @@
 
 <!-- 8. Подробная программа в раскрывающихся плашках -->
 <section class="wrap sec" id="program">
-  <div class="sec-head rv"><span class="eyebrow">От понимания — к практике</span><h2>Что будем разбирать <b>за 4 недели</b></h2><p class="section-note">Тематические занятия и разборы — в живом формате. Раскройте неделю, чтобы посмотреть темы, практику и материалы.</p></div>
+  <div class="sec-head rv"><span class="eyebrow">От понимания — к практике</span><h2>Что будем разбирать <b>за 4 недели</b></h2><p class="section-note">Раскройте неделю, чтобы посмотреть темы занятий, практику и материалы.</p></div>
   <div class="program-list">
     <details class="program-week"><summary><span class="week-number">01</span><span class="week-heading"><span class="eyebrow">Неделя 1</span><strong>Понимаем своё состояние</strong><span class="week-intro">Знакомимся с пищеварением, наблюдаем за самочувствием и выбираем первые посильные изменения.</span></span></summary><div class="week-content"><div><h3>Темы занятий</h3><ul><li>Как работает пищеварение и почему похожие симптомы могут иметь разные причины.</li><li>Дневник самочувствия: что отмечать и как замечать связь с едой и режимом.</li><li>Сон, стресс и обмен веществ: что важно обсудить со специалистом.</li><li>Понятная тарелка: состав блюда, порции и покупки без сложных схем.</li><li>Границы самопомощи: когда нужна консультация и как подготовить вопросы врачу.</li></ul></div><div class="week-practice"><h3>Что сделаете на практике</h3><p>Начнёте дневник, соберёте свою первую тарелку и выберете одну привычку для наблюдения.</p><h3>Что останется у вас</h3><p>Шаблон дневника, ориентиры для составления тарелки и список вопросов к специалистам.</p><div class="live-note"><b>Живая встреча</b><p>Знакомство с экспертами и ответы на вопросы о начале курса.</p></div></div></div></details>
     <details class="program-week"><summary><span class="week-number">02</span><span class="week-heading"><span class="eyebrow">Неделя 2</span><strong>Находим, что вызывает дискомфорт</strong><span class="week-intro">Разбираем две основные темы потока: тяжесть, вздутие и изжогу после еды, а также запоры.</span></span></summary><div class="week-content"><div><h3>Темы занятий</h3><ul><li>Тяжесть, вздутие и изжога: роль объёма еды, скорости приёма пищи и режима.</li><li>Личные реакции на продукты: как наблюдать за ними без запрета всего подряд.</li><li>Запоры: как питание, питьевой режим и движение связаны с работой кишечника.</li><li>Как читать свой дневник и отличать наблюдение от поспешного вывода.</li><li>Какие вопросы об обследованиях и лекарствах обсуждать с лечащим врачом.</li></ul></div><div class="week-practice"><h3>Что сделаете на практике</h3><p>Сопоставите записи о самочувствии с повседневными привычками и начнёте подбирать удобное меню.</p><h3>Что останется у вас</h3><p>Примеры меню, список покупок и памятка по наблюдению за своими реакциями.</p><div class="live-note"><b>Живая встреча</b><p>Разбор вопросов по двум темам потока и первых наблюдений участников.</p></div></div></div></details>
@@ -469,15 +478,15 @@
   </div><div class="chips"><span><b>Раз в неделю</b> — живой эфир с врачами и разбор ваших вопросов</span><span><b>Между встречами</b> — практика питания и привычек</span></div><p class="section-note">Даты и время встреч сообщим до оплаты. Подробности программы могут уточняться с учётом вопросов группы.</p>
 </section>
 
-<!-- 9. Предзапись вместо тарифов -->
+<!-- 9. Два входа в одну цепочку -->
 <section class="wrap sec" id="prereg">
-  <div class="prereg-panel rv"><div><span class="eyebrow">Первый поток</span><h2>Хотите пройти эти<br>четыре недели с нами?</h2><p>Предзапись — способ сообщить, что вам интересен курс, и получить приглашение, когда откроется набор.</p><p>Сначала пришлём дату старта, расписание и стоимость. Вы посмотрите условия и решите, участвовать ли.</p><a class="btn" href="#prereg" data-prereg>Хочу в первый поток</a><span class="prereg-note">Без оплаты сейчас. Предзапись не обязывает покупать курс и не бронирует место.</span></div><ol class="prereg-steps"><li><span>01</span><div><h3>Перейдите в Telegram</h3><p>Откройте бот и нажмите «Старт».</p></div></li><li><span>02</span><div><h3>Подтвердите предзапись</h3><p>Бот сообщит, что вы в списке ожидания.</p></div></li><li><span>03</span><div><h3>Получите приглашение</h3><p>Узнайте условия набора и выберите, подходит ли вам первый поток.</p></div></li></ol></div>
+  <div class="prereg-panel rv"><div><span class="eyebrow">Следующий шаг</span><h2>Хотите присоединиться?</h2><p>Оставьте предзапись, чтобы получить дату старта, расписание и стоимость. Посмотрите условия и решите, участвовать ли.</p><a class="btn" href="#prereg" data-prereg>Оставить предзапись</a><span class="prereg-note">Без оплаты сейчас и обязательства покупать курс.</span></div><div class="fit-card"><span class="eyebrow">Пока сомневаетесь?</span><h3>Узнайте, что будет<br>полезно именно вам</h3><p>Ответьте на несколько вопросов о самочувствии и привычках. Покажем, какие темы программы связаны с вашим запросом. В конце можно оставить предзапись.</p><a class="btn ghost" href="#prereg" data-prereg>Подойдёт ли мне курс?</a><span class="prereg-note">Тест помогает сориентироваться в программе и не ставит диагноз.</span></div></div>
 </section>
 
 <!-- 10. Вопросы о первом потоке -->
 <section class="wrap sec" id="faq"><div class="faq"><div class="sec-head rv"><h2>Перед тем как присоединиться</h2></div><div>
 <details><summary>Это курс в записи?</summary><p>Первый поток проходит в живом формате: встречи с экспертами, вопросы и практика между эфирами. Заранее записанных уроков сейчас нет.</p></details>
-<details><summary>Что даёт предзапись?</summary><p>Вы попадёте в список ожидания и получите сообщение о старте набора. Оплачивать сейчас ничего не нужно. Предзапись не равна покупке курса или гарантированной брони места.</p></details>
+<details><summary>Что даёт предзапись?</summary><p>После короткого теста можно подтвердить предзапись и получить сообщение о начале набора. Оплачивать сейчас ничего не нужно. Предзапись не равна покупке курса или гарантированной брони места.</p></details>
 <details><summary>Когда старт и сколько стоит участие?</summary><p>Дату, расписание и стоимость сообщим в боте до оплаты. Первый поток планируем небольшим — точное число мест объявим вместе с условиями.</p></details>
 <details><summary>Можно ли задавать вопросы врачам?</summary><p>Да, на еженедельных живых встречах можно будет задать вопросы по теме курса. Ситуации участников разбираем с их согласия, в образовательном формате.</p></details>
 <details><summary>Если я не смогу быть на эфире?</summary><p>График сообщим до оплаты, чтобы вы могли оценить, удобно ли вам участвовать. Возможность просмотра записей и срок доступа уточним при открытии набора.</p></details>
@@ -485,16 +494,18 @@
 </div></div></section>
 
 <!-- 11. Подвал и окно предзаписи -->
-<div class="f-cta"><h2>Начнём вместе — в первом потоке</h2><p>Четыре недели, небольшая группа и живой диалог с экспертами.</p><a class="btn light" href="#prereg" data-prereg>Хочу в первый поток</a></div>
-<footer class="foot"><div class="wrap"><div>Центр Болотова · первый поток курса</div><div class="disc">Курс носит образовательный характер и не заменяет консультацию врача. Результаты зависят от индивидуальной ситуации.</div></div></footer>
+<div class="f-cta"><h2>Узнайте о старте набора</h2><p>Пришлём расписание и стоимость — вы решите, подходит ли вам курс.</p><a class="btn light" href="#prereg" data-prereg>Оставить предзапись</a></div>
+<footer class="foot"><div class="wrap"><div>Центр Болотова</div><div class="disc">Курс носит образовательный характер и не заменяет консультацию врача. Результаты зависят от индивидуальной ситуации.</div></div></footer>
 <dialog class="prereg-dialog" id="prereg-dialog" aria-labelledby="prereg-title" aria-describedby="prereg-description">
   <button class="dialog-close" type="button" aria-label="Закрыть окно предзаписи">×</button>
-  <span class="eyebrow">Первый поток</span><h2 id="prereg-title">Предзапись на курс</h2>
-  <p id="prereg-description">В Telegram нажмите «Старт» и подтвердите предзапись. Когда откроется набор, бот пришлёт расписание и стоимость.</p>
-  <div class="bot-pending" id="bot-pending" role="status"><b>Бот предзаписи скоро появится</b><p>Сейчас мы готовим его к запуску. Возвращайтесь на эту страницу — здесь появится переход в Telegram. Ваша предзапись пока не оформлена.</p></div>
-  <a class="btn" id="prereg-bot-link" hidden>Перейти в Telegram</a>
-  <button class="btn" id="prereg-bot-pending" type="button" disabled>Предзапись скоро откроется</button>
-  <p class="dialog-note">Оплаты на этом шаге нет. Предзапись не бронирует место на курсе.</p>
+  <span class="eyebrow">Выберите, где удобнее</span><h2 id="prereg-title">Telegram или Макс?</h2>
+  <p id="prereg-description">Внутри — короткий тест о вашем запросе, пояснение по программе и предзапись на курс.</p>
+  <div class="messenger-options">
+    <div><a class="messenger-option telegram" id="bot-telegram-link" hidden><span class="messenger-icon" aria-hidden="true">↗</span><span>Telegram<small>Тест и предзапись</small></span><span aria-hidden="true">→</span></a><button class="messenger-option telegram" id="bot-telegram-pending" type="button" disabled><span class="messenger-icon" aria-hidden="true">↗</span><span>Telegram<small>Скоро подключим</small></span></button></div>
+    <div><a class="messenger-option max" id="bot-max-link" hidden><span class="messenger-icon" aria-hidden="true">М</span><span>Макс<small>Тест и предзапись</small></span><span aria-hidden="true">→</span></a><button class="messenger-option max" id="bot-max-pending" type="button" disabled><span class="messenger-icon" aria-hidden="true">М</span><span>Макс<small>Скоро подключим</small></span></button></div>
+  </div>
+  <p class="channel-status" id="channel-status" role="status">Готовим ботов к запуску. Выбор станет доступен здесь; пока предзапись не оформляется.</p>
+  <p class="dialog-note">Без оплаты сейчас. Предзапись не бронирует место на курсе.</p>
 </dialog>
 
 </div>
@@ -519,16 +530,25 @@
 
   // Подключить только после создания и живого теста новой ветки бота.
   // Действующие бот и метки других запусков сюда не подставлять.
-  const preregConfig = {botUrl: '', videos: {olga: '', anita: '', alena: ''}};
+  const preregConfig = {channels: {telegram: '', max: ''}, videos: {olga: '', anita: '', alena: ''}};
   const modal = document.getElementById('prereg-dialog');
-  const botLink = document.getElementById('prereg-bot-link');
   let returnFocus = null;
-  if (/^https:\/\/t\.me\/[A-Za-z0-9_]+\?start=[A-Za-z0-9_-]{1,64}$/.test(preregConfig.botUrl)) {
-    botLink.href = preregConfig.botUrl;
-    botLink.hidden = false;
-    document.getElementById('bot-pending').hidden = true;
-    document.getElementById('prereg-bot-pending').hidden = true;
-  }
+  let availableChannels = 0;
+  const allowedChannels = {telegram: {host: 't.me', maxLength: 64}, max: {host: 'max.ru', maxLength: 128}};
+  Object.entries(preregConfig.channels).forEach(([channel, value]) => {
+    if (!value) return;
+    try {
+      const url = new URL(value), rule = allowedChannels[channel], payload = url.searchParams.get('start');
+      if (!rule || url.protocol !== 'https:' || url.hostname !== rule.host || url.port || url.username || url.password || url.hash || !/^\/[A-Za-z0-9_]+$/.test(url.pathname) || !payload || payload.length > rule.maxLength || !/^[A-Za-z0-9_-]+$/.test(payload) || [...url.searchParams.keys()].some(k => k !== 'start') || url.searchParams.getAll('start').length !== 1) return;
+      const link = document.getElementById('bot-'+channel+'-link');
+      link.href = url.href; link.hidden = false;
+      document.getElementById('bot-'+channel+'-pending').hidden = true;
+      availableChannels++;
+    } catch (_) { /* Некорректная ссылка оставляет безопасное состояние «скоро». */ }
+  });
+  const channelStatus = document.getElementById('channel-status');
+  if (availableChannels === 2) channelStatus.hidden = true;
+  else if (availableChannels === 1) channelStatus.textContent = 'Второй мессенджер скоро подключим. Уже можно выбрать доступный.';
   document.querySelectorAll('[data-prereg]').forEach(a => a.addEventListener('click', e => {
     e.preventDefault(); returnFocus = a; modal.showModal(); document.body.style.overflow = 'hidden';
   }));
